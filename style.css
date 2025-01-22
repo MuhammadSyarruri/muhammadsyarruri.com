@@ -8,21 +8,14 @@ body {
     background-color: var(--main);
 }
 
-header {
-    position: relative;
+.jumbotron  {
     background-color: var(--second);
 }
 
-.profile img, .profile div {
-    position: relative;
-    bottom: 100px;
+header {
+    background-color: var(--second);
 }
 
-.profile img {
+.jumbotron img {
     border: var(--third) solid 4px;
-}
-
-.wave {
-    position: absolute;
-    bottom: -1px;
 }
