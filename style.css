@@ -12,10 +12,44 @@ body {
     background-color: var(--second);
 }
 
-header {
-    background-color: var(--second);
-}
-
 .jumbotron img {
     border: var(--third) solid 4px;
+}
+
+.wave {
+    position: relative;
+    top: 1px;
+}
+
+.card-body {
+    background-color: var(--third);
+}
+
+.zoom-card:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
+
+.html-tag {
+    background-color: orangered;
+    color: white;
+    padding: 0px 3px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.css-tag {
+    background-color: dodgerblue;
+    color: white;
+    padding: 0px 3px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.js-tag {
+    background-color: yellow;
+    color: black;
+    padding: 0px 3px;
+    border-radius: 4px;
+    font-size: 0.8em;
 }
