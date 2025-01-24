@@ -53,3 +53,12 @@ body {
     border-radius: 4px;
     font-size: 0.8em;
 }
+
+.contact {
+    height: 75vh;
+    background-color: var(--second);
+}
+
+.btn {
+    background-color: var(--third);
+}
