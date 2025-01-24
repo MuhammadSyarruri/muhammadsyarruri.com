@@ -8,6 +8,10 @@ body {
     background-color: var(--main);
 }
 
+.dropdown-menu {
+    background-color: var(--third);
+}
+
 .jumbotron  {
     background-color: var(--second);
 }
