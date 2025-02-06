@@ -69,6 +69,10 @@ body {
     background-color: var(--second);
 }
 
+.contact form {
+    width: 35em;
+}
+
 .btn {
     background-color: var(--third);
 }
@@ -106,5 +110,9 @@ body {
 
     .jumbotron img {
         width: 170px;
+    }
+
+    .contact form{
+        width: 70%;
     }
 }
