@@ -1,9 +1,9 @@
 const container = document.getElementById("kontainer")
 
-        const warna = ['cyan', 'lime', 'yellow', 'pink', 'red']
+        const warna = ['cyan', 'lime', 'yellow', 'pink', 'red', 'darkmagenta', 'orange']
 
         function warnaRandom() {
-            return warna[Math.floor(Math.random() * 5)]
+            return warna[Math.floor(Math.random() * 7)]
         }
 
         for (let i = 0; i < 180; i++) {
