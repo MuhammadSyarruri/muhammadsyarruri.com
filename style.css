@@ -9,6 +9,45 @@ body {
     overflow-x: hidden;
 }
 
+/* ANIMASI OPENING */
+.topOpening {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--third);
+    position: fixed;
+    z-index: 2000;
+    animation: topAnimation 2s forwards;
+    animation-delay: 1.5s;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.bottomOpening {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--third);
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    animation: bottomAnimation 2s forwards;
+    animation-delay: 1.5s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes topAnimation {
+    from {top: 0;}
+    to {top: -50%;}
+}
+
+@keyframes bottomAnimation {
+    from {bottom: 0;}
+    to {bottom: -50%;}
+}
+/* ANIMASI OPENING END */
+
 .dropdown-menu {
     background-color: var(--third);
 }

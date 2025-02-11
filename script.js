@@ -1,3 +1,4 @@
+// ANIMASI KOTAK BERWARNA
 const container = document.getElementById("kontainer")
 
         const warna = ['cyan', 'lime', 'yellow', 'pink', 'red', 'darkmagenta', 'orange']
@@ -23,3 +24,22 @@ const container = document.getElementById("kontainer")
                 div.style.backgroundColor = "#C5BAFF"
             })
         })
+// ANIMASI KOTAK BERWARNA END
+
+// ANIMASI OPENING
+const jam = new Date().getHours()
+const menyapa = document.getElementById('menyapa')
+
+if (jam >= 1 && jam <= 3) {
+    menyapa.innerHTML = "Selamat Malam"
+} else if (jam >= 4 && jam <= 9) {
+    menyapa.innerHTML = "Selamat Pagi"
+    menyapa
+} else if (jam >= 10 && jam <= 14) {
+    menyapa.innerHTML = 'Selamat Siang'
+} else if (jam >= 15 && jam <= 18) {
+    menyapa.innerHTML = "Selamat Sore"
+} else if (jam >= 19 && jam <= 24) {
+    menyapa.innerHTML = "Selamat Malam"
+}
+// ANIMASI OPENING END
