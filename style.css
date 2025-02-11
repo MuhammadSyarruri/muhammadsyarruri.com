@@ -10,12 +10,18 @@ body {
 }
 
 /* ANIMASI OPENING */
-.topOpening {
+.containerOpening {
     width: 100%;
-    height: 50vh;
-    background-color: var(--third);
+    height: 100vh;
     position: fixed;
     z-index: 2000;
+}
+
+.topOpening {
+    width: 100%;
+    height: 50%;
+    background-color: var(--third);
+    position: relative;
     animation: topAnimation 2s forwards;
     animation-delay: 1.5s;
     display: flex;
@@ -25,11 +31,10 @@ body {
 
 .bottomOpening {
     width: 100%;
-    height: 50vh;
+    height: 50%;
     background-color: var(--third);
-    position: fixed;
+    position: relative;
     bottom: 0;
-    z-index: 2000;
     animation: bottomAnimation 2s forwards;
     animation-delay: 1.5s;
     display: flex;
@@ -39,12 +44,18 @@ body {
 
 @keyframes topAnimation {
     from {top: 0;}
-    to {top: -50%;}
+    to {
+        top: -50%;
+        display: none;
+    }
 }
 
 @keyframes bottomAnimation {
     from {bottom: 0;}
-    to {bottom: -50%;}
+    to {
+        bottom: -50%;
+        display: none;
+    }
 }
 /* ANIMASI OPENING END */
 
@@ -116,6 +127,7 @@ body {
     background-color: var(--third);
 }
 
+/* ANIMASI KOTAK BERWARNA */
 .container-kotak {
     width: 120%;
     height: 250px;
@@ -141,12 +153,13 @@ body {
 .kotak:hover {
     transition: 0s;
 }
+/* ANIMASI KOTAK BERWARNA END */
 
 @media screen and (max-width: 768px) {
     .container-kotak {
         display: none;
     }
-
+    
     .jumbotron img {
         width: 170px;
     }
