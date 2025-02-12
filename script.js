@@ -21,7 +21,7 @@ const container = document.getElementById("kontainer")
             })
 
             div.addEventListener("mouseout", function () {
-                div.style.backgroundColor = "#C5BAFF"
+                div.style.backgroundColor = "#71b5ff"
             })
         })
 // ANIMASI KOTAK BERWARNA END
@@ -42,4 +42,9 @@ if (jam >= 1 && jam <= 3) {
 } else if (jam >= 19 && jam <= 24) {
     menyapa.innerHTML = "Selamat Malam"
 }
+
+// hapus div sesudah animasi
+// setTimeout(function() {
+//     document.querySelector('.containerOpening').style.display = "none"
+// }, 3500)
 // ANIMASI OPENING END
